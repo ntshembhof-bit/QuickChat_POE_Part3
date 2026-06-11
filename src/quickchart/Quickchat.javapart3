@@ -1,0 +1,66 @@
+package quickchart;
+
+import java.util.Scanner;
+
+public class Quickchat {
+    
+    public static void main(String[] args){
+          
+        Scanner input = new Scanner(System.in);
+        Message msgWorker = new Message();
+        
+        System.out.println("--- QUICKCHAT LOGIN ---");
+
+        System.out.print("Enter username: ");
+        String username = input.nextLine();
+
+        System.out.print("Enter password: ");
+        String password = input.nextLine();
+        
+        if (username.equals("kyl_1")
+        && password.equals("Ch&&sec@ke99!")) {
+
+    System.out.println("Welcome Kyle, Smith it is great to see you again.");
+
+    System.out.println();
+    System.out.println("Welcome to QuickChat.");
+    System.out.println("---");
+    
+    System.out.println("DEBUG HERE");
+     
+    System.out.print("Enter the number of messages you wish to enter: ");
+            int limit = input.nextInt();
+            input.nextLine();
+
+            msgWorker.initializeArrays(limit);
+
+            int choice = 0;
+
+            while (choice != 3) {
+                System.out.println();
+                System.out.println("===============================");
+                System.out.println("          MAIN MENU            ");
+                System.out.println("===============================");
+                System.out.println("1) Send Messages");
+                System.out.println("2) Show recently sent messages");
+                System.out.println("4) Stored Messages Menu");
+                System.out.println("3) Quit");
+                System.out.println("===============================");
+                System.out.print("Select an option: ");
+
+                choice = input.nextInt();
+                input.nextLine();
+
+                if (choice == 3) {
+                    System.out.println("Thank you for using QuickChat. Goodbye!");
+                }
+   
+            }
+
+        } else {
+
+       System.out.println( "Username or password incorrect, please try again.");
+     }
+        
+    } 
+}
