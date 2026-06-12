@@ -21,7 +21,7 @@ public class Message {
         messageID = new String[capacity];
         recipients = new String[capacity];
     }
-
+    //validates that the message does exceed 250 characters
     public String checkMessageLength(String message) {
         if (message.length() > 250) {
             int excess = message.length() - 250;
