@@ -2,6 +2,7 @@ package quickchart;
 
 import java.util.Scanner;
 
+//Main QuickChat application with login and menu 
 public class Quickchat {
     
     public static void main(String[] args){
