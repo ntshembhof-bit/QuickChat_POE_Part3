@@ -3,6 +3,7 @@ package quickchart;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+//unit test for Message class validation and functionality 
 public class MessageTest {
 
     @Test
