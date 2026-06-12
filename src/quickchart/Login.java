@@ -1,5 +1,5 @@
 package quickchart;
-
+// Login validation functionality
 public class Login {
 
 private String username;
