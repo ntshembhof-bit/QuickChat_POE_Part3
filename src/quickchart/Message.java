@@ -1,5 +1,6 @@
 package quickchart;
-
+ 
+// Message validation ,storage, hashung and tracking functionality
 public class Message {
 
     private String[] sentMessages;
